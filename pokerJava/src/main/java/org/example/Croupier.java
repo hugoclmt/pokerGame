@@ -10,11 +10,11 @@ public class Croupier {
         this.cardPackage = new CardPackage();
     }
 
-    public void mix(){
+    public void mix(){ //methode pour melanger les cartes
         Collections.shuffle(cardPackage.getCards());
     }
 
-    public Card giveCard(){
+    public Card giveCard(){ //methode pour distribuer les cartes
         Card card = cardPackage.getCards().getFirst();
         cardPackage.getCards().removeFirst();
         return card;

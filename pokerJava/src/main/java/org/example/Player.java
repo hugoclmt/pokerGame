@@ -24,4 +24,19 @@ public class Player {
         return name;
     }
 
+    public void check(){ //methode pour suivre
+        //TODO
+
+    }
+
+    public void bet() //methode pour miser
+    {
+        //TODO
+    }
+
+    public void fold() //methode pour se coucher
+    {
+        //TODO
+    }
+
 }
