@@ -6,10 +6,12 @@ import java.util.List;
 public class Player {
     private String name;
     private List<Card> mains;
+    private Jetons jetons;
 
-    public Player(String name) {
+    public Player(String name, Jetons jetons) {
         this.name = name;
         this.mains = new ArrayList<>();
+        this.jetons = jetons;
     }
 
     public void addCard(Card card) {
@@ -24,9 +26,16 @@ public class Player {
         return name;
     }
 
+    public Jetons getJetons() {
+        return jetons;
+    }
+
+    public void setJetons(Jetons jetons) {
+        this.jetons = jetons;
+    }
+
     public void check(){ //methode pour suivre
         //TODO
-
     }
 
     public void bet() //methode pour miser
@@ -38,5 +47,4 @@ public class Player {
     {
         //TODO
     }
-
 }

@@ -19,6 +19,16 @@ public class Croupier {
         cardPackage.getCards().removeFirst();
         return card;
     }
+
+    public void giveJeton(int totalJetons)
+    {
+
+    }
+
+    public void takeJeton()
+    {
+
+    }
 }
 
 
