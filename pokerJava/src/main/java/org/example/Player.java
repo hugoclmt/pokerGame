@@ -6,9 +6,9 @@ import java.util.List;
 public class Player{
     private String name;
     private List<Card> mains;
-    private Jetons jetons;
+    private List<Jetons> jetons;
 
-    public Player(String name, Jetons jetons) {
+    public Player(String name,List<Jetons>jetons) {
         this.name = name;
         this.mains = new ArrayList<>();
         this.jetons = jetons;
@@ -26,12 +26,16 @@ public class Player{
         return name;
     }
 
-    public Jetons getJetons() {
+    public List<Jetons> getJetons() {
         return jetons;
     }
 
-    public void setJetons(Jetons jetons) {
-        this.jetons = jetons;
+    public int getJetonsValue(){
+        int value = 0;
+        for (Jetons jeton : jetons) {
+            value += jeton.getValue();
+        }
+        return value;
     }
 
     public void check(){ //methode pour suivre

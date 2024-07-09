@@ -1,18 +1,18 @@
 package org.example;
 
-public class Jetons {
-    private int num;
+public abstract class Jetons {
+    private int value;
 
-    public Jetons(int num) {
-        this.num = num;
+    public Jetons(int value) {
+        this.value = value;
     }
 
-    public int getNum() {
-        return this.num;
+    public int getValue() {
+        return this.value;
     }
 
     @Override
     public String toString() {
-        return "jeton qui vaut : "+this.num;
+        return "jeton qui vaut : "+this.value;
     }
 }
