@@ -5,13 +5,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Jetons jetons = new Jetons(100);
+    public static void main(String[] args) {
+        Jetons jetons = new Jetons();
         Scanner sc = new Scanner(System.in);
         System.out.println("Combien de joueurs : ?");
         int nbPlayers = sc.nextInt();
         List<Player> players = new ArrayList<>();
+
         for (int i = 0; i < nbPlayers; i++) {
             System.out.println("Nom du joueur " + (i + 1) + " : ");
             String name = sc.next();
@@ -25,3 +26,16 @@ public class Main {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
