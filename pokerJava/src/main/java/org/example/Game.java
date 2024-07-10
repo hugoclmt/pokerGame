@@ -7,6 +7,7 @@ public class Game {
     private List<Player> players;
     private Croupier croupier;
     private List<Card> cardsOnTable;
+    private List<Jetons> sommeTotalJetons = new ArrayList<>();
 
     public Game(List<Player> players, Croupier croupier) {
         this.players = players;

@@ -30,6 +30,10 @@ public class Player{
         return jetons;
     }
 
+    public void addJetons(List<Jetons> jeton){
+        this.jetons.addAll(jeton);
+    }
+
     public int getJetonsValue(){
         int value = 0;
         for (Jetons jeton : jetons) {
@@ -39,16 +43,18 @@ public class Player{
     }
 
     public void check(){ //methode pour suivre
-        //TODO
+        System.out.println("Je suis " + this.name + " et je check");
     }
 
-    public void bet() //methode pour miser
+    public List<Jetons> bet() //methode pour miser
     {
-        //TODO
+        return null;
     }
 
     public void fold() //methode pour se coucher
     {
-        //TODO
+        System.out.println("Je suis " + this.name + " et je me couche");
     }
+
+
 }

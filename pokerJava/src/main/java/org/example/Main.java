@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         List<Jetons> jetons = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
             jetons.add(new JetonBlanc());
@@ -30,7 +29,6 @@ public class Main {
         System.out.println("Combien de joueurs : ?");
         int nbPlayers = sc.nextInt();
         List<Player> players = new ArrayList<>();
-
 
         for (int i = 0; i < nbPlayers; i++) {
             System.out.println("Nom du joueur " + (i + 1) + " : ");

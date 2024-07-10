@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Collections;
+import java.util.List;
 
 public class Croupier {
 
@@ -20,12 +21,12 @@ public class Croupier {
         return card;
     }
 
-    public void giveJeton(int totalJetons)
+    public void giveJeton(List<Jetons> totalJetons, Player player)
     {
-
+        player.addJetons(totalJetons);
     }
 
-    public void takeJeton()
+    public void takeJeton(Player player)
     {
 
     }
