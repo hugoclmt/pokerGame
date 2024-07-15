@@ -20,6 +20,7 @@ public class Game {
         this.croupier.mix();
         distributeCardsJoueurs(2);
         //action des joueurs à définir
+        
         distributeCardsTable(3);
         afficherCartesTables();
         //Action des joueurs à définir

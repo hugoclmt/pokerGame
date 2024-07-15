@@ -5,21 +5,21 @@ import java.util.List;
 
 public class Player{
     private String name;
-    private List<Card> mains;
+    private Mains main;
     private List<Jetons> jetons;
 
     public Player(String name,List<Jetons>jetons) {
         this.name = name;
-        this.mains = new ArrayList<>();
+        this.main = new Mains();
         this.jetons = jetons;
     }
 
     public void addCard(Card card) {
-        this.mains.add(card);
+        this.main.addCard(card);
     }
 
-    public List<Card> getMains() {
-        return mains;
+    public Mains getMains() {
+        return this.main;
     }
 
     public String getName() {
